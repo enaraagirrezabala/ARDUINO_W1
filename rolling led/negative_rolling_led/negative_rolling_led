@@ -1,5 +1,5 @@
 /*
- ROLLING LED.
+ Negative ROLLING LED.
 
   circuito constituido por cinco Leds, 5 Resistencias de 220 ohms cada una, cables,
   placa Arduino nano y protoboard.
@@ -33,14 +33,14 @@ void setup() {
 void loop() {
   //Definimos un bucle que hará que se encienda un led por segundo. Cada valor de la
   //variable i llamara al pin que este en esa posición.
-  for (int i = 0; i < 5; i++) {
+  //encender todos los leds
+ for (int i = 0; i < 5; i++) {
       digitalWrite(led[i], true);  // Encender led
-      delay(1000); //Esperar 1 segundo
     }
-  
-  //orden inverso
-   for (int i = 3; i >= 1; i--) {
-      digitalWrite(led[i], false);  // Encender led
-      delay(1000); //Esperar 1 segundo
+ //apagar led por paso
+  for (int i = 0; i < 5; i++) {
+      digitalWrite(led[i], false);  // apagar led
+      delay(1000); //esperar un segundo
+      digitalWrite(led[i], true);  // Encender led
     }
 }
