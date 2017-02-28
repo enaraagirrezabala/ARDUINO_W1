@@ -5,7 +5,7 @@
   placa Arduino nano y protoboard.
 
 
-  5 LEDS 5 ESTADOS se enciende una led en orden
+  5 LEDS 5 ESTADOS se enciende y después se apaga una led por segundo en orden
 
   Enara Agirrezabala
   Oinarria: Blink ariketa.
