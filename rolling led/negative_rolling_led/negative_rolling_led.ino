@@ -33,8 +33,14 @@ void setup() {
 void loop() {
   //Definimos un bucle que hará que se encienda un led por segundo. Cada valor de la
   //variable i llamara al pin que este en esa posición.
-  i=random(0,4);
-  digitalWrite(led[i], true);
-  delay(1000);
-  digitalWrite(led[i], false);
+  for (int i = 0; i < 5; i++) {
+      digitalWrite(led[i], true);  // Encender led
+      delay(1000); //Esperar 1 segundo
+    }
+  
+  //orden inverso
+   for (int i = 3; i >= 1; i--) {
+      digitalWrite(led[i], false);  // Encender led
+      delay(1000); //Esperar 1 segundo
+    }
 }
