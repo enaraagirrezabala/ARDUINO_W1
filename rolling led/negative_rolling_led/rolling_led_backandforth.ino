@@ -1,11 +1,11 @@
 /*
-  NEGATIVE ROLLING LED.
+ ROLLING LED.
 
   circuito constituido por cinco Leds, 5 Resistencias de 220 ohms cada una, cables,
   placa Arduino nano y protoboard.
 
 
-  5 LEDS 5 ESTADOS
+  5 LEDS 5 ESTADOS se enciende una led en orden
 
   Enara Agirrezabala
   Oinarria: Blink ariketa.
