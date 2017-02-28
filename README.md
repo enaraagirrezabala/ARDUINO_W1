@@ -1,2 +1,3 @@
 # ARDUINO_W1
-First week of arduino programming
+First week of arduino programming 
+LCI BARCELONA_ DISEÑO DE PRODUCTO TECNOLOGICO
