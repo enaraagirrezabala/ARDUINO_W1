@@ -4,7 +4,7 @@
   circuito constituido por cinco Leds, 5 Resistencias de 220 ohms cada una, cables,
   placa Arduino nano y protoboard.
 
-  Enciender Led por segundo en orden y dejarlo encendido.
+  Enciender Led por segundo en orden de uno a uno.
 
   Enara Agirrezabala
   Oinarria: Blink ariketa.
@@ -13,8 +13,6 @@
 
 // Definimos las variables que vayamos a utilizar
 int i;  //contador
-int k;
-int j;
 int led [] = {3, 5, 6, 9, 10};//Definimos el array que contiene los números de
 // vayamos a colocar nuestros leds, en este caso, pin 3,5,6,9,10
 
@@ -29,18 +27,12 @@ void setup() {
 }
 
 void loop() {
-  //Encender todos los leds
+  //Encender todos los leds de uno a uno
   for (int i = 0; i < 5; i++) {
     digitalWrite(led[i], true);  // Encender led
+     delay(1000);//Esperar 1 s
   }
-  delay(1000); // Esperar 1
-  //Apagar el led situado en la mitad y despues los que esten situados a su alrededor.
-  for (int k = 0; k < 3; k++) {
-    i=2-k;
-    j=2+k;
-    digitalWrite(led[i], false);  // Encender led
-    digitalWrite(led[j], false);
-    delay(1000);
-  }
+ 
+ 
  
 }
